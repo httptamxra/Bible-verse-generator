@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bible Quotes Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="card">
+    <h1>Bible Verse Generator</h1>
+    <p>Click the button below to generate a random Bible verse.</p>
+
+    <div>
+      <select id="topic">
+        <option value="love">Love</option>
+        <option value="faith">Faith</option>
+        <option value="hope">Hope</option>
+        <option value="forgiveness">Forgiveness</option>
+        <option value="strength">Strength</option>
+      </select>
+
+      <button id="btn">Generate Verse</button>
+      <button id="saveBtn">❤️ Save to favorites</button>
+    </div>
+
+    <section id="verse-box">
+      <h2>Your Bible Verse:</h2>
+      <p id="verse-text"></p>
+      <p id="verse-ref" class="ref"></p>
+    </section>
+
+    <section id="auth">
+      <input type="text" id="username" placeholder="Enter username" />
+      <button id="loginBtn">Login</button>
+      <p id="userInfo"></p>
+    </section>
+
+    <section id="favorites">
+      <h3>My Favorites</h3>
+      <ul id="favoritesList"></ul>
+    </section>
+
+    <script src="app.js"></script>
+  </main>
+</body>
+</html>
